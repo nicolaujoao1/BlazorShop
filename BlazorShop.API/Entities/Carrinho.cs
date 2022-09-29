@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-namespace BlazorShop.Models.Entities;
+namespace BlazorShop.API.Entities;
 public class Carrinho
 {
     public int Id { get; set; }

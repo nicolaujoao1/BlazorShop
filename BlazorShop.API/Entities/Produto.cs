@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorShop.Models.Entities
+namespace BlazorShop.API.Entities
 {
     public class Produto
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
+        [MaxLength(100)]
+        public string? Nome { get; set; }
+        [MaxLength(200)]
         public string? Descricao { get; set; }
-        public string? ImageUrl { get; set; }
+        [MaxLength(200)]
+        public string? ImagemUrl { get; set; }
+        [Column(TypeName="decimal(10,2)")]
         public decimal Preco { get; set; }
         public int Quantidade { get; set; }
         public int CategoriaId { get; set; }

@@ -1,4 +1,4 @@
-﻿namespace BlazorShop.Models.Entities;
+﻿namespace BlazorShop.API.Entities;
 public class  CarrinhoItem
 {
     public int Id { get; set; }
