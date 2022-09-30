@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorShop.Models.Entities
+namespace BlazorShop.Models.DTOs
 {
-    public class Produto
+    public class ProdutoDto
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -16,11 +16,7 @@ namespace BlazorShop.Models.Entities
         public decimal Preco { get; set; }
         public int Quantidade { get; set; }
         public int CategoriaId { get; set; }
-        public Categoria? Categoria { get; set; }
-        public ICollection<CarrinhoItem>? Items { get; set; }
-        public Produto()
-        {
-            Items = new Collection<CarrinhoItem>();
-        }
+        public string? CategoriaNome { get; set; }
+
     }
 }

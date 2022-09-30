@@ -5,17 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorShop.Models.Entities
+namespace BlazorShop.Models.DTOs
 {
-    public class Categoria
+    public class CategoriaDto
     {
         public int Id { get; set; }
         public string? Nome { get; set; }
         public string? IconCss { get; set; }
-        public ICollection<Produto>? Produtos { get; set; }
-        public Categoria()
-        {
-            Produtos = new Collection<Produto>();
-        }
+        
     }
 }
