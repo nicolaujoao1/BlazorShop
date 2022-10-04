@@ -28,6 +28,20 @@ namespace BlazorShop.API.Mappings
                         CategoriaNome = produto.Categoria.Nome
                     }).ToList();
         }
+        public static ProdutoDto ConverterProdutoParaDto(this Produto produto)
+        {
+            return new ProdutoDto
+            {
+                Id = produto.Id,
+                Name = produto.Nome,
+                Descricao = produto.Descricao,
+                ImageUrl = produto.ImagemUrl,
+                Preco = produto.Preco,
+                Quantidade = produto.Quantidade,
+                CategoriaId = produto.Categoria.Id,
+                CategoriaNome = produto.Categoria.Nome
+            };
+        }
         public static IEnumerable<CarrinhoItemDto> ConverterCarrinhoItensParaDto(
             this IEnumerable<CarrinhoItem>carrinhoItems,IEnumerable<Produto> produtos) 
         {
