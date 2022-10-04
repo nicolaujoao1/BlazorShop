@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShop.API", "BlazorShop.API\BlazorShop.API.csproj", "{DE34C09A-25C3-490A-B165-F66DCF39A3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShop.API", "BlazorShop.API\BlazorShop.API.csproj", "{DE34C09A-25C3-490A-B165-F66DCF39A3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShop.UI", "BlazorShop.UI\BlazorShop.UI.csproj", "{D61A5D3E-3403-40DE-86E1-192A3460F1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShop.UI", "BlazorShop.UI\BlazorShop.UI.csproj", "{D61A5D3E-3403-40DE-86E1-192A3460F1A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShop.Models", "BlazorShop.Models\BlazorShop.Models.csproj", "{2DDFA744-1089-4B4E-B69B-6F2AC6D22F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShop.Models", "BlazorShop.Models\BlazorShop.Models.csproj", "{2DDFA744-1089-4B4E-B69B-6F2AC6D22F5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
